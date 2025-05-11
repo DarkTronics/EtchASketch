@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/image.png" type="image/x-icon">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="container">
+        <div class="controls">
+            <div class="slider-container">
+                <div class="slider-info">
+                    <p>Grid Size:</p>
+                    <p id="size-value">16 x 16</p>
+                </div>
+                <input type="range" id="size-slider" min="1" max="64" value="16">
+            </div>
+            <div class="buttons">
+                <button id="reset-btn">Reset</button>
+                <button id="color-btn">Color</button>
+                <button id="eraser-btn">Eraser</button>
+            </div>
+        </div>
+        
+        <div class="etch-a-sketch">
+            <div class="knob left-knob"></div>
+            <div class="grid-container" id="grid"></div>
+            <div class="knob right-knob"></div>
+        </div>
+        
+        <div class="footer">
+            Click and drag to draw. Use the slider to change grid size.
+        </div>
+    </div>
+
+  </body>
+</html>
